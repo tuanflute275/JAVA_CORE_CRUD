@@ -39,11 +39,21 @@ public class JDBCUtil {
 	(
 	id int PRIMARY KEY AUTO_INCREMENT,
 	name varchar(200),
-    price float,
-    sale_price float,
+    	price float,
+    	sale_price float,
 	status int,
-    expiration_date Date
+    	expiration_date Date
     );
+
+
+    create table product(
+	id int not null primary key identity,
+	proName nvarchar(200) not null unique,
+	price float,
+	sale_price float,
+	status int,
+ 	expiration_date datetime
+	);
     
 */    
 
